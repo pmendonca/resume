@@ -1,10 +1,368 @@
-<html>
-    <head>
-        <title>My Web Page</title>
-    </head>
-    <link rel="stylesheet" href="public/styles.css">
-  <body>
-    <h1>Welcome to My Web Page</h1>
-    <p>This is a sample paragraph to demonstrate the linked CSS stylesheet.</p>
-  </body>
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paulo Mendonça — Software Architect & Team Lead</title>
+  <meta name="description"
+    content="18+ years in .NET, Node.js/TypeScript, DDD, Cloud. Tech Lead & Software Architect delivering resilient systems in fintech." />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- Use your built Tailwind CSS -->
+  <!-- <link rel="stylesheet" href="styles.css" /> -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Paulo Mendonça — Software Architect & Tech Lead">
+  <meta property="og:description" content="18+ years | .NET, Node.js, DDD, Cloud | Team Leadership">
+  <meta property="og:type" content="profile">
+  <style>
+    /* Tiny helpers for print */
+    @media print {
+      html{
+        transform-origin: top center;
+        font-size: 80%;         
+      },
+      body {
+        color-scheme: light;
+        background: white;        
+      }
+
+      .no-print {
+        display: none !important;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      header,
+      footer {
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900 container mx-auto p-5">
+  <div class="flex">
+    <!-- <div class="md:w-1/6 flex-none">
+      <div class="w-full">
+        <div class="flex flex-col">
+          <img src="./public/1707716626340.jpg" alt="Paulo Mendonça" class="rounded w-full object-cover" />
+        </div>
+        <div class="text-gray-500 text-sm flex flex-col mt-4">
+          <div class=" text-black font-medium text-sm">
+            Links
+          </div>
+          <a href="https://www.linkedin.com/in/paulocesarmendonca/" target="_blank" class="underline">
+            Linkedin</a>
+          <a href="https://github.com/pmendonca" target="_blank" class="underline">
+            Github</a>
+          <a href="https://stackoverflow.com/users/819184/paulo-mendon%c3%a7a" target="_blank"
+            class="underline">Stackoverflow</a>
+        </div>
+      </div>
+    </div> -->
+    <div class="flex-1 min-w-0 p-4 pt-0">
+      <div class="flex flex-col mt-16">
+        <span class="font-medium text-2xl mb-2">Paulo César Menezes Mendonça <i class="fa-brands fa-github"></i></span>
+        <span class="font-light text-gray-500">Software Architect • Team Lead</span>
+        <span class="font-light text-gray-500">São Paulo, SP - Brazil</span>
+      </div>
+
+      <!-- Expertise -->
+      <div class="flex flex-col mt-8">
+        <span class="font-medium text-sm pb-4">Expertise</span>
+        <div class="text-xs flex flex-wrap gap-1">
+          <div class="border border-gray-300 rounded-full px-3 py-1 font-thin">.NET/C#</div>
+          <div class="border border-gray-300 rounded-full px-3 py-1 font-thin">.NET Core</div>
+          <div class="border border-gray-300 rounded-full px-3 py-1 font-thin">NodeJs / Typescript</div>
+          <div class="border border-gray-300 rounded-full px-3 py-1 font-thin">Domain-Driven Design</div>
+          <div class="border border-gray-300 rounded-full px-3 py-1 font-thin">Clean Architecture</div>
+          <div class="border border-gray-300 rounded-full px-3 py-1 font-thin">Hexagonal Patterns</div>
+          <div class="border border-gray-300 rounded-full px-3 py-1 font-thin">PostgreSQL</div>
+          <div class="border border-gray-300 rounded-full px-3 py-1 font-thin">Mongodb</div>
+          <div class="border border-gray-300 rounded-full px-3 py-1 font-thin">Kafka</div>
+          <div class="border border-gray-300 rounded-full px-3 py-1 font-thin">AWS</div>
+          <div class="border border-gray-300 rounded-full px-3 py-1 font-thin">Docker</div>
+        </div>
+      </div>
+
+      <!-- Bio -->
+      <div class="flex flex-col mt-8">
+        <span class="font-medium text-sm">Bio</span>
+        <span class="font-light text-gray-500">I’m a Senior Software Engineer with 18 years of experience designing and
+          delivering high-impact solutions across the financial and technology sectors. Passionate about solving
+          real-world challenges through thoughtful architecture — whether modernizing legacy systems, guiding teams
+          through critical transitions, or experimenting with new patterns in distributed environments. A pragmatic
+          problem-solver, AI enthusiast, and lifelong learner who thrives on collaboration.</span>
+      </div>
+
+      <!-- Portfolio / Expertise -->
+      <div class="flex mt-8">
+
+        <!-- Portfolio -->
+        <!-- <div class="w-1/2 flex flex-col">
+          <div class="font-medium text-sm">Portfolio</div>
+          <div>
+            <div><a href="#act" class="font-medium underline hover:text-blue-900">Act Digital</a></div>
+            <div>TBD, tbd, tbd</div>
+            <div><a href="#klubi" class="font-medium underline hover:text-blue-900">Klubi</a></div>
+            <div>TBD, tbd, tbd</div>
+            <div><a href="#mottu" class="font-medium underline hover:text-blue-900">Mottu</a></div>
+            <div>TBD, tbd, tbd</div>
+            <div><a href="#xp" class="font-medium underline hover:text-blue-900">XP Inc.</a></div>
+            <div>TBD, tbd, tbd</div>
+          </div>
+        </div> -->
+
+        <!-- Experience -->
+        <div class="w-full">
+          <div class="text-sm font-semibold tracking-wide mb-4">Experience</div>
+          <div class="text-xs flex flex-wrap">
+            <div class="border mb-1 border-gray-300 rounded-full px-3 py-1 mr-1 font-thin">C# 18 years</div>
+            <div class="border mb-1 border-gray-300 rounded-full px-3 py-1 mr-1 font-thin">JavaScript 18 years</div>
+            <div class="border mb-1 border-gray-300 rounded-full px-3 py-1 mr-1 font-thin">TypeScript 4 years</div>
+            <div class="border mb-1 border-gray-300 rounded-full px-3 py-1 mr-1 font-thin">SQL 18 years</div>
+            <div class="border mb-1 border-gray-300 rounded-full px-3 py-1 mr-1 font-thin">.NET Core 10 years</div>
+            <div class="border mb-1 border-gray-300 rounded-full px-3 py-1 mr-1 font-thin">NodeJs 6 years</div>
+            <div class="border mb-1 border-gray-300 rounded-full px-3 py-1 mr-1 font-thin">PostgreSQL 10 years</div>
+            <div class="border mb-1 border-gray-300 rounded-full px-3 py-1 mr-1 font-thin">Mongodb 10 years</div>
+
+            <div class="border mb-1 border-gray-300 rounded-full px-3 py-1 mr-1 font-thin">Kafka 18 years</div>
+            <div class="border mb-1 border-gray-300 rounded-full px-3 py-1 mr-1 font-thin">RabbitMQ 10 years</div>
+            <div class="border mb-1 border-gray-300 rounded-full px-3 py-1 mr-1 font-thin">SQS / SNS 10 years</div>
+            <div class="border mb-1 border-gray-300 rounded-full px-3 py-1 mr-1 font-thin">React 4 years</div>
+            <div class="border mb-1 border-gray-300 rounded-full px-3 py-1 mr-1 font-thin">Team enablement 4 years</div>
+            <div class="border mb-1 border-gray-300 rounded-full px-3 py-1 mr-1 font-thin">Agile / Scrum 18 years</div>
+            <div class="border mb-1 border-gray-300 rounded-full px-3 py-1 mr-1 font-thin">cross-team collaboration 5
+              years</div>
+            <div class="border mb-1 border-gray-300 rounded-full px-3 py-1 mr-1 font-thin">AWS 10 years</div>
+            <div class="border mb-1 border-gray-300 rounded-full px-3 py-1 mr-1 font-thin">Docker 10 years</div>
+            <div class="border mb-1 border-gray-300 rounded-full px-3 py-1 mr-1 font-thin">Kubernetes 8 years</div>
+            <div class="border mb-1 border-gray-300 rounded-full px-3 py-1 mr-1 font-thin">Azure 10 years</div>
+            <div class="border mb-1 border-gray-300 rounded-full px-3 py-1 mr-1 font-thin">CI/CD (GitHub Actions,
+              Jenkins) 18 years</div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="flex flex-col mt-8">
+        <span class="font-medium text-sm">Work Experience</span>
+
+        <!-- Experience -->
+        <div>
+          <!-- Act Digital -->
+          <div class="flex-col mb-4">
+            <div class="flex w-full">
+              <h2 id="act" class="w-1/2 font-semibold">Team Lead • Software Architect</h2>
+              <div class="w-1/2 text-right">2025 — PRESENT</div>
+            </div>
+            <div class="w-full">Act Digital · São Paulo (Remote)</div>
+
+            <div class="w-full mt-2 font-light text-gray-500">
+              <p class="mb-1">Leads a cross-functional engineering team responsible for payroll-deductible and
+                personal-credit products at Banco BMG.</p>
+              <ul class="list-disc pl-8">
+                <li>Drives modernization of legacy .NET Framework systems into modular, resilient microservices (.NET 8
+                  / Java)..</li>
+                <li>Coordinates delivery and technical strategy with product and operations stakeholders under strict
+                  SLAs.</li>
+                <li> Mentors engineers on architecture, incident management, and code quality — reducing incident MTTR
+                  by 35%. </li>
+              </ul>
+              <p class="text-gray-500 text-xs pl-8 pt-4"><span class="font-bold">Technologies:</span> .Net 8, .Net Full
+                Framework, Node.js, PostgreSQL, Sybase, AWS, Kubernetes.</p>
+            </div>
+          </div>
+
+          <!-- Klubi -->
+          <div class="flex-col mb-4">
+            <div class="flex w-full">
+              <div class="w-1/2 font-semibold">Team Lead • Software Architect</div>
+              <div class="w-1/2 text-right">2024 — 2025</div>
+            </div>
+            <h2 id="klubi" class="w-full">Klubi · Remote</h2>
+            <div class="w-full mt-2 font-light text-gray-500">
+              <p class="mb-1">Owned technical direction of a credit-risk and loan-origination platform regulated by the
+                Central Bank of Brazil.</p>
+              <ul class="list-disc pl-8  ">
+                <li>Designed modular architecture enabling faster partner integrations and safer credit analysis
+                  pipelines.</li>
+                <li>Implemented event-driven communication (Kafka) and improved observability across services.</li>
+                <li>Guided a growing team of developers, establishing coding standards and automated quality checks.
+                </li>
+              </ul>
+              <p class="text-gray-500 text-xs pl-8 pt-4"><span class="font-bold">Technologies:</span> Node.js
+                (TypeScript), React, PostgreSQL, AWS, Kafka.</p>
+            </div>
+          </div>
+
+          <!-- Mottu -->
+          <div class="flex-col mb-4">
+            <div class="flex w-full">
+              <div class="w-1/2 font-semibold">Tech Lead • Software Architect</div>
+              <div class="w-1/2 text-right">2022 — 2024</div>
+            </div>
+            <h2 id="mottu" class="w-full">Mottu · Remote</h2>
+
+            <div class="w-full mt-2 font-light text-gray-500">
+              <p class="mb-1">Led distributed backend development for a high-availability logistics and delivery
+                platform.</p>
+              <ul class="list-disc pl-8 ">
+                <li>Conducted rapid experimentation cycles (actor model, linear optimization) for route-planning
+                  algorithms.</li>
+                <li>Established testing culture and CI/CD pipelines, improving deployment reliability.
+                </li>
+              </ul>
+              <p class="text-gray-500 text-xs pl-8 pt-4"><span class="font-bold">Technologies:</span> .NET Core,
+                Node.js, MongoDB, PostgreSQL, RabbitMQ, Kubernetes.</p>
+            </div>
+          </div>
+
+          <!-- XP Inc. -->
+          <div class="flex-col mb-4">
+            <div class="flex w-full">
+              <div class="w-1/2 font-semibold">Tech Lead • Senior Software Engineer</div>
+              <div class="w-1/2 text-right">2021 — 2022</div>
+            </div>
+            <h2 id="xp" class="w-full">XP Inc. · São Paulo</h2>
+
+            <div class="w-full mt-2 font-light text-gray-500">
+              <p class="mb-1">Co-led the development of Open Finance phases 2 and 3, ensuring compliance with Central
+                Bank
+                specifications.</p>
+              <ul class="list-disc pl-8">
+                <li>Designed microservices architecture focused on scalability and security under high-regulation
+                  demands.
+                </li>
+                <li>
+                  Collaborated with BCB working groups defining interoperability and API standards among institutions.
+                </li>
+              </ul>
+              <p class="text-gray-500 text-xs pl-8 pt-4"><span class="font-bold">Technologies:</span> .NET Core, Kafka,
+                Docker, Kubernetes, PostgreSQL, Azure.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- XP Inc. -->
+        <div class="flex-col mb-4">
+          <div class="flex w-full">
+            <div class="w-1/2 font-semibold">Previous Experience</div>
+            <div class="w-1/2 text-right">2007 — 2020</div>
+          </div>
+          <h2 id="xp" class="w-full">Earlier Roles</h2>
+
+          <div class="w-full mt-2 font-light text-gray-500">
+            <p class="mb-1">Worked in various software engineering and architecture positions across consulting and
+              financial institutions.</p>
+            <ul class="list-disc pl-8">
+              <li>Gained experience with enterprise systems, APIs, and modernization initiatives using .NET, SQL Server,
+                and cloud environments.
+                <i>(Full details available on <a href="https://www.linkedin.com/in/paulocesarmendonca/"
+                    class="underline" target="_blank">LinkedIn</a>)</i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <!-- <div class="flex flex-col mt-8">
+          <span class="font-medium text-sm">Skills</span>
+          <div class="flex-col">
+            <div class="w-full text-gray-500"><span class="font-semibold">Tools:</span> AWS, Azure...</div>
+            <div class="w-full text-gray-500"><span class="font-medium">Paradigms:</span> AWS, Azure...
+            </div>
+            <div class="w-full text-gray-500"><span class="font-medium">Libraries/APIs:</span> AWS, Azure...
+            </div>
+          </div>
+        </div> -->
+
+      <!-- Language Skills -->
+      <div class="flex flex-col mt-8">
+        <span class="text-sm font-semibold tracking-wide mb-2">Language Skills</span>
+
+        <div class="space-y-2 text-sm text-gray-500">
+
+
+          <div>
+            <span class="font-medium text-gray-600">English —</span>
+            Advanced (C1). Daily use in professional settings — meetings, technical documentation, code reviews, and
+            cross-team collaboration.
+            Confident in written and spoken communication with international stakeholders.
+          </div>
+
+          <div>
+            <span class="font-medium text-gray-600">Portuguese —</span>
+            Native speaker.
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Education -->
+      <div class="flex flex-col mt-8">
+        <span class="font-medium text-sm">Education</span>
+        <div class="flex w-full">
+          <div class="w-1/2 font-semibold">Bachelor of Computer Science</div>
+          <div class="w-1/2 text-right">2007 - 2011</div>
+        </div>
+        <div class="w-full text-gray-500">UNASP C1, Sao Paulo - Brazil</div>
+        <div class="w-full text-gray-500 text"><i>(coursework completed; degree not finalized)</i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-12 border-t border-slate-200 pt-6 text-center text-xs text-slate-500">
+    <p class="font-medium text-slate-700 ">
+      © <span id="footer-year"></span> Paulo Mendonça — Portfolio & Résumé
+    </p>
+    <p class="mt-1">
+      <a href="https://linkedin.com/in/paulomendonca" class="underline" target="_blank"
+        class="hover:text-sky-500">linkedin.com/in/paulomendonca</a>
+      &nbsp;•&nbsp;
+      <a href="https://github.com/paulomendonca" class="underline" target="_blank">github.com/paulomendonca</a>
+      &nbsp;•&nbsp;
+      <a href="https://stackoverflow.com/users/819184/paulo-mendon%c3%a7a" target="_blank"
+        class="underline">Stackoverflow</a>
+    </p>
+    <p class="mt-1 italic">
+      Based in São Paulo, Brazil (UTC−3) — Available for Remote / B2B (USD)
+    </p>
+  </footer>
+
+  <script>
+    // automatically sets current year
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+
+
+  <!-- JSON-LD for richer previews -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Paulo Mendonça",
+    "jobTitle":"Software Architect & Tech Lead",
+    "url":"https://example.com",
+    "email":"mailto:you@example.com",
+    "knowsAbout":[".NET","C#","Node.js","TypeScript","DDD","Kubernetes","AWS","Kafka","PostgreSQL"],
+    "sameAs":[
+      "https://github.com/youruser",
+      "https://www.linkedin.com/in/youruser"
+    ]
+  }
+  </script>
+
+</body>
+
 </html>
